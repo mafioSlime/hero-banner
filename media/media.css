@@ -1,0 +1,40 @@
+@media (min-width: 600px) {
+  .hero-banner-container .nav-links-container .nav-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 100%;
+  }
+  .hero-banner-container .title-container {
+    height: 65vh;
+  }
+  .hero-banner-container .title-container .title-content h1 {
+    font-size: 65px;
+    margin-bottom: 0.5rem;
+  }
+  .hero-banner-container .title-container .title-content p {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-banner-container .nav-links-container {
+    margin: auto;
+  }
+  .hero-banner-container .nav-links-container .nav-links {
+    max-width: 65%;
+  }
+  .hero-banner-container .title-container .title-content h1 {
+    font-size: 75px;
+    margin-bottom: 0.8rem;
+  }
+  .hero-banner-container .title-container .title-content p {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .hero-banner-container .title-container .title-content a {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

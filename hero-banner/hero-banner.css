@@ -1,0 +1,163 @@
+.hero-banner-container {
+  position: relative;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(57, 70, 38, 0.3)), to(rgba(0, 0, 0, 0.7))), url(../image/hero-banner.jpg);
+  background-image: linear-gradient(to right bottom, rgba(57, 70, 38, 0.3), rgba(0, 0, 0, 0.7)), url(../image/hero-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-banner-container .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-banner-container .logo-container i {
+  color: #fff;
+}
+
+.hero-banner-container .logo-container h1 {
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0.2rem;
+  font-family: 'Rock Salt', cursive;
+  font-weight: lighter;
+  text-shadow: 15px 15px 15px #0085CA;
+}
+
+.hero-banner-container .nav-container {
+  max-width: 85%;
+  margin: auto;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.hero-banner-container .nav-container .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  -webkit-box-shadow: 2px 2px;
+          box-shadow: 2px 2px;
+  border-radius: 20px;
+}
+
+.hero-banner-container .nav-container .nav-links li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+
+.hero-banner-container .nav-container .nav-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.hero-banner-container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.1rem;
+  height: 40vh;
+  color: #e4e4e4;
+  font-family: 'Lato', sans-serif;
+}
+
+.hero-banner-container .title-container .title-content {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.hero-banner-container .title-container .title-content h1 {
+  font-size: 55px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-banner-container .title-container .title-content p {
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+.hero-banner-container .title-container .title-content a {
+  font-size: 18px;
+  padding: 0 10px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.hero-banner-container .title-container .title-content a:hover {
+  border-color: #0085CA;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.animation::before {
+  top: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.animation::after {
+  bottom: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.animation:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.animation:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.nav-links a::before,
+.nav-links a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #0085CA;
+  position: absolute;
+  left: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+/*# sourceMappingURL=hero-banner.css.map */

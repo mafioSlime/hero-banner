@@ -1,0 +1,53 @@
+@media (min-width: 600px) {
+    .hero-banner-container {
+        .nav-links-container {
+            .nav-links {
+                flex-direction: row;
+                max-width: 100%;
+            }
+        }
+    
+        .title-container {
+            height: 65vh;
+                .title-content {
+                 h1 {
+                    font-size: 65px;
+                    margin-bottom: 0.5rem;
+                
+                }
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+    
+}
+  
+}
+
+@media (min-width: 900px) {
+    .hero-banner-container {
+        .nav-links-container {
+            // max-width: 65%;
+            margin: auto;
+            .nav-links {
+                max-width: 65%;
+            }
+        }
+        .title-container {
+            .title-content {
+                h1 {
+                    font-size: 75px;
+                    margin-bottom: 0.8rem; 
+                }
+                p {
+                    font-size: 25px;
+                    margin-bottom: 1rem;
+                }
+                a {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
